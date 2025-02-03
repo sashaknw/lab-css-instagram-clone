@@ -74,5 +74,20 @@
         </ul>
       
     </footer>
+
+
+<script>
+    document.querySelector('.single-row').addEventListener('click', (event) => {
+        if (event.target.tagName === 'LI' && event.target.id !== 'license') {
+            alert(`You clicked on ${event.target.textContent}`);
+        }
+    });
+
+    document.querySelectorAll('.download-buttons img').forEach(button => {
+        button.addEventListener('click', () => {
+            window.open('https://www.instagram.com/accounts/login/', '_blank');
+        });
+    });
+</script>
   </body>
 </html>
