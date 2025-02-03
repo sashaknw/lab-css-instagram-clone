@@ -164,15 +164,71 @@ footer {
   display: flex;
   flex-direction: row;
   font-size: 14px;
-  justify-content: space-between;
+  justify-content: center;
   color: rgb(78, 129, 174, 0.9);
   font-weight: 500;
   list-style: none;
-  max-width: 90%;
+  max-width: 95%;
+  gap: 10px;
+
+}
+
+.single-row li {
+  margin: 0 10px;
 
 }
 
 
 #license {
   color: rgb(145, 145, 145, 0.9)
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone-img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .text-field {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .download-buttons {
+    margin-left: 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .single-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .single-row li {
+    margin: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .background-section {
+    padding: 10px;
+  }
+
+  h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .download-buttons img {
+    width: 120px;
+  }
 }
