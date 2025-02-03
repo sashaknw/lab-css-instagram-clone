@@ -3,6 +3,19 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
+
+:root {
+  --dark-blue: #06365f;
+  --light-blue: #1c5380;
+}
+
+/* Improve footer link hover states */
+.single-row li:not(#license):hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
